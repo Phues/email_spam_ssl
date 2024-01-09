@@ -20,7 +20,7 @@ def transform_text(text):
 def transform_ds(X):
     return np.array(list(map(transform_text, X)))
 
-model = load(filename="spam_detection_model.joblib")
+model = load(filename="deployment/spam_detection_model.joblib")
 
 st.title("Email spam classifier")
 
